@@ -20,7 +20,7 @@ public class CharacterMove : MonoBehaviour {
 	public float speed = 10;
 	public float jumpForce = 50;
 	private bool isGrounded;
-	private float direction = 0; // 1 if right, -1 if left
+	private float direction = 1; // 1 if right, -1 if left
 	
 	void Awake()
 	{
@@ -34,8 +34,6 @@ public class CharacterMove : MonoBehaviour {
 		rigidBody2D.velocity = new Vector2(xMove, rigidBody2D.velocity.y);
 		if (xMove != 0)
 			flip(xMove); // CHANGE DIRECTION
-		else
-			direction = 0; // RESET DIRECTION
 		// SET SPEED FOR ANIMATOR
 		animator.SetFloat("Speed", Mathf.Abs(xMove));
 	}
