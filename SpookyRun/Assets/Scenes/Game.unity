@@ -140,7 +140,7 @@ GameObject:
   - component: {fileID: 60487662}
   m_Layer: 0
   m_Name: MovingPlatform4
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -525,7 +525,7 @@ GameObject:
   - component: {fileID: 341482564}
   m_Layer: 0
   m_Name: MovingPlatform1
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1138,7 +1138,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: 5ec4d3a66a941ac41ad4c3ad135186eb, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1181,7 +1181,7 @@ GameObject:
   - component: {fileID: 820301322}
   m_Layer: 0
   m_Name: MovingPlatform2
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1624,6 +1624,80 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!1001 &844866644
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 6748108236214304257, guid: 6dbbdcfcd47c15e4cb6a2909ad144117, type: 3}
+      propertyPath: m_UsedByComposite
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6748108236214304260, guid: 6dbbdcfcd47c15e4cb6a2909ad144117, type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6748108236214304260, guid: 6dbbdcfcd47c15e4cb6a2909ad144117, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6748108236214304260, guid: 6dbbdcfcd47c15e4cb6a2909ad144117, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6748108236214304260, guid: 6dbbdcfcd47c15e4cb6a2909ad144117, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -4.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6748108236214304260, guid: 6dbbdcfcd47c15e4cb6a2909ad144117, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 7.18
+      objectReference: {fileID: 0}
+    - target: {fileID: 6748108236214304260, guid: 6dbbdcfcd47c15e4cb6a2909ad144117, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6748108236214304260, guid: 6dbbdcfcd47c15e4cb6a2909ad144117, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6748108236214304260, guid: 6dbbdcfcd47c15e4cb6a2909ad144117, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6748108236214304260, guid: 6dbbdcfcd47c15e4cb6a2909ad144117, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6748108236214304260, guid: 6dbbdcfcd47c15e4cb6a2909ad144117, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6748108236214304260, guid: 6dbbdcfcd47c15e4cb6a2909ad144117, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6748108236214304260, guid: 6dbbdcfcd47c15e4cb6a2909ad144117, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6748108236214304260, guid: 6dbbdcfcd47c15e4cb6a2909ad144117, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6748108236214304261, guid: 6dbbdcfcd47c15e4cb6a2909ad144117, type: 3}
+      propertyPath: m_GravityScale
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 6748108236214304262, guid: 6dbbdcfcd47c15e4cb6a2909ad144117, type: 3}
+      propertyPath: m_Name
+      value: Character
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 6748108236214304258, guid: 6dbbdcfcd47c15e4cb6a2909ad144117, type: 3}
+  m_SourcePrefab: {fileID: 100100000, guid: 6dbbdcfcd47c15e4cb6a2909ad144117, type: 3}
 --- !u!1 &1035968130
 GameObject:
   m_ObjectHideFlags: 0
@@ -1703,6 +1777,31 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1035968130}
   m_CullTransparentMesh: 1
+--- !u!1 &1044304762 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6748108236214304262, guid: 6dbbdcfcd47c15e4cb6a2909ad144117, type: 3}
+  m_PrefabInstance: {fileID: 844866644}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1044304764
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1044304762}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7eac543da4691ff428a21b531d35d9e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 1044304768}
+  speed: 5
+  jumpForce: 10
+--- !u!95 &1044304768 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 6748108236214304256, guid: 6dbbdcfcd47c15e4cb6a2909ad144117, type: 3}
+  m_PrefabInstance: {fileID: 844866644}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1547545581
 GameObject:
   m_ObjectHideFlags: 0
@@ -2275,7 +2374,7 @@ GameObject:
   - component: {fileID: 2014716664}
   m_Layer: 0
   m_Name: MovingPlatform5
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2683,7 +2782,7 @@ GameObject:
   - component: {fileID: 2080226378}
   m_Layer: 0
   m_Name: Ground2
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -37815,7 +37914,7 @@ GameObject:
   - component: {fileID: 2095867962}
   m_Layer: 0
   m_Name: MovingPlatform3
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

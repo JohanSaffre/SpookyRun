@@ -17,8 +17,8 @@ public class CharacterMove : MonoBehaviour {
 	public Animator animator;
 
 	// MOVEMENT PARAMS
-	public float speed = 30;
-	public float jumpForce = 50;
+	public float speed = 10;
+	public float jumpForce = 10;
 	private bool isGrounded;
 	private float direction = 1; // 1 if right, -1 if left
 	
