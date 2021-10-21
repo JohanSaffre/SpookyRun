@@ -219,7 +219,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa84733b629b8604a8ca7360229e5b16, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animator: {fileID: 1533635484}
+  cinematic: {fileID: 1533635484}
+  fader: {fileID: 767579487}
 --- !u!1 &270311584
 GameObject:
   m_ObjectHideFlags: 0
@@ -470,6 +471,11 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &767579487 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 2522496200531722999, guid: c0e5b533072f16046aa0310284b6a1f5, type: 3}
+  m_PrefabInstance: {fileID: 2522496199898372008}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1316100479
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -629,7 +635,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa84733b629b8604a8ca7360229e5b16, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animator: {fileID: 0}
+  cinematic: {fileID: 1533635484}
+  fader: {fileID: 767579487}
 --- !u!1 &1806692019
 GameObject:
   m_ObjectHideFlags: 0
@@ -721,7 +728,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: Game
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1806692022
@@ -845,13 +852,13 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 249007804}
-        m_TargetAssemblyTypeName: MenuActions, Assembly-CSharp
-        m_MethodName: LoadPage
+        m_TargetAssemblyTypeName: SceneAction, Assembly-CSharp
+        m_MethodName: FadeOut
         m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 1
           m_FloatArgument: 0
           m_StringArgument: Rules
           m_BoolArgument: 0
@@ -1026,3 +1033,60 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2010353223}
   m_CullTransparentMesh: 1
+--- !u!1001 &2522496199898372008
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2522496200531722952, guid: c0e5b533072f16046aa0310284b6a1f5, type: 3}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2522496200531722952, guid: c0e5b533072f16046aa0310284b6a1f5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 960
+      objectReference: {fileID: 0}
+    - target: {fileID: 2522496200531722952, guid: c0e5b533072f16046aa0310284b6a1f5, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 540
+      objectReference: {fileID: 0}
+    - target: {fileID: 2522496200531722952, guid: c0e5b533072f16046aa0310284b6a1f5, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2522496200531722952, guid: c0e5b533072f16046aa0310284b6a1f5, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2522496200531722952, guid: c0e5b533072f16046aa0310284b6a1f5, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2522496200531722952, guid: c0e5b533072f16046aa0310284b6a1f5, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2522496200531722952, guid: c0e5b533072f16046aa0310284b6a1f5, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2522496200531722952, guid: c0e5b533072f16046aa0310284b6a1f5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2522496200531722952, guid: c0e5b533072f16046aa0310284b6a1f5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2522496200531722952, guid: c0e5b533072f16046aa0310284b6a1f5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2522496200531722998, guid: c0e5b533072f16046aa0310284b6a1f5, type: 3}
+      propertyPath: m_Name
+      value: SceneFadeTransition
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: c0e5b533072f16046aa0310284b6a1f5, type: 3}

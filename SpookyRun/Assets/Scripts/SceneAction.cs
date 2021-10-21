@@ -15,13 +15,25 @@ using UnityEngine.SceneManagement;
 
 public class SceneAction : MonoBehaviour
 {
-	public Animator animator;
+	public Animator cinematic;
+	public Animator fader;
 
     public void LaunchGameCinematic() {
-        animator.SetTrigger("playCinematic");
+        cinematic.SetTrigger("playCinematic");
     }
 
-    public void LoadPage(string sceneName) {
+    public void FadeOut(string sceneName)
+    {
+        PlayerPrefs.SetString("sceneToLoad", sceneName);
+        fader.SetTrigger("FadeOut");
+    }
+
+    public void OnFadeComplete()
+    {
+        SceneManager.LoadScene(PlayerPrefs.GetString("sceneToLoad"));
+    }
+
+    public void LoadScene(string sceneName) {
         SceneManager.LoadScene(sceneName);
     }
 
