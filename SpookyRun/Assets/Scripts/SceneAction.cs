@@ -15,6 +15,13 @@ using UnityEngine.SceneManagement;
 
 public class SceneAction : MonoBehaviour
 {
+	public Animator animator;
+
+    public void LaunchGameCinematic()
+    {
+        animator.SetTrigger("playCinematic");
+    }
+
     public void LoadPage(string sceneName)
     {
         SceneManager.LoadScene(sceneName);
