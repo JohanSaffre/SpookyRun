@@ -1824,6 +1824,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 18cb03d21106bd047a54cb9ea7883f37, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  portraitAnimation: {fileID: 2035481776}
   boxCountLabel: {fileID: 1035968132}
   deathCountLabel: {fileID: 795279585}
 --- !u!1 &1533489360
@@ -2783,6 +2784,8 @@ GameObject:
   - component: {fileID: 2035481773}
   - component: {fileID: 2035481775}
   - component: {fileID: 2035481774}
+  - component: {fileID: 2035481776}
+  - component: {fileID: 2035481777}
   m_Layer: 5
   m_Name: Portrait
   m_TagString: Untagged
@@ -2847,6 +2850,40 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2035481772}
   m_CullTransparentMesh: 1
+--- !u!95 &2035481776
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2035481772}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 0a4a34999cd6c3049b61b4427131625a, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &2035481777
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2035481772}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 18cb03d21106bd047a54cb9ea7883f37, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  portraitAnimation: {fileID: 2035481776}
+  boxCountLabel: {fileID: 1035968132}
+  deathCountLabel: {fileID: 795279585}
 --- !u!1 &2080226376
 GameObject:
   m_ObjectHideFlags: 0
