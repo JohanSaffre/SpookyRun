@@ -15,12 +15,7 @@ using UnityEngine.SceneManagement;
 
 public class SceneAction : MonoBehaviour
 {
-	public Animator cinematic;
 	public Animator fader;
-
-    public void LaunchGameCinematic() {
-        cinematic.SetTrigger("playCinematic");
-    }
 
     public void FadeOut(string sceneName)
     {
