@@ -219,7 +219,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa84733b629b8604a8ca7360229e5b16, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animator: {fileID: 1342884919}
+  animator: {fileID: 1533635484}
 --- !u!1 &270311584
 GameObject:
   m_ObjectHideFlags: 0
@@ -284,7 +284,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &452277954
 GameObject:
@@ -470,38 +470,13 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!95 &1342884919 stripped
-Animator:
-  m_CorrespondingSourceObject: {fileID: 6748108236214304256, guid: 6dbbdcfcd47c15e4cb6a2909ad144117, type: 3}
-  m_PrefabInstance: {fileID: 1362226733}
-  m_PrefabAsset: {fileID: 0}
---- !u!1001 &1362226733
+--- !u!1001 &1316100479
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 6748108236214304256, guid: 6dbbdcfcd47c15e4cb6a2909ad144117, type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6748108236214304256, guid: 6dbbdcfcd47c15e4cb6a2909ad144117, type: 3}
-      propertyPath: m_UpdateMode
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6748108236214304256, guid: 6dbbdcfcd47c15e4cb6a2909ad144117, type: 3}
-      propertyPath: m_CullingMode
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6748108236214304256, guid: 6dbbdcfcd47c15e4cb6a2909ad144117, type: 3}
-      propertyPath: m_ApplyRootMotion
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6748108236214304257, guid: 6dbbdcfcd47c15e4cb6a2909ad144117, type: 3}
-      propertyPath: m_AutoTiling
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 6748108236214304258, guid: 6dbbdcfcd47c15e4cb6a2909ad144117, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.size
       value: 1
@@ -576,7 +551,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6748108236214304260, guid: 6dbbdcfcd47c15e4cb6a2909ad144117, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6748108236214304260, guid: 6dbbdcfcd47c15e4cb6a2909ad144117, type: 3}
       propertyPath: m_LocalScale.x
@@ -626,17 +601,35 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6748108236214304261, guid: 6dbbdcfcd47c15e4cb6a2909ad144117, type: 3}
-      propertyPath: m_UseAutoMass
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 6748108236214304262, guid: 6dbbdcfcd47c15e4cb6a2909ad144117, type: 3}
       propertyPath: m_Name
       value: Character
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 6748108236214304259, guid: 6dbbdcfcd47c15e4cb6a2909ad144117, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6dbbdcfcd47c15e4cb6a2909ad144117, type: 3}
+--- !u!1 &1533635479 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6748108236214304262, guid: 6dbbdcfcd47c15e4cb6a2909ad144117, type: 3}
+  m_PrefabInstance: {fileID: 1316100479}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &1533635484 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 6748108236214304256, guid: 6dbbdcfcd47c15e4cb6a2909ad144117, type: 3}
+  m_PrefabInstance: {fileID: 1316100479}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1533635487
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1533635479}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa84733b629b8604a8ca7360229e5b16, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 0}
 --- !u!1 &1806692019
 GameObject:
   m_ObjectHideFlags: 0

@@ -17,18 +17,15 @@ public class SceneAction : MonoBehaviour
 {
 	public Animator animator;
 
-    public void LaunchGameCinematic()
-    {
+    public void LaunchGameCinematic() {
         animator.SetTrigger("playCinematic");
     }
 
-    public void LoadPage(string sceneName)
-    {
+    public void LoadPage(string sceneName) {
         SceneManager.LoadScene(sceneName);
     }
 
-    public void QuitGame()
-    {
+    public void QuitGame() {
         Application.Quit();
     }
 }
