@@ -11,9 +11,11 @@ public class AudioManager : MonoBehaviour
     // Awake is called before the first frame update
     void Awake()
     {
-        if (instance == null)
+        if (instance == null) {
             instance = this;
-        else {
+            PlayerPrefs.SetFloat("SoundVolume", 1f);
+            PlayerPrefs.SetFloat("MusicVolume", .3f);
+        } else {
             Destroy(gameObject);
             return;
         }
@@ -23,7 +25,10 @@ public class AudioManager : MonoBehaviour
             sound.source = gameObject.AddComponent<AudioSource>();
             sound.source.clip = sound.clip;
 
-            sound.source.volume = sound.volume;
+            if (sound.type == Sound.audioType.Sound)
+                sound.source.volume = PlayerPrefs.GetFloat("SoundVolume");
+            else if (sound.type == Sound.audioType.Music)
+                sound.source.volume = PlayerPrefs.GetFloat("MusicVolume");
             sound.source.pitch = sound.pitch;
 
             sound.source.loop = sound.loop;
@@ -62,8 +67,8 @@ public class AudioManager : MonoBehaviour
     {
         foreach (Sound sound in sounds) {
             if (sound.type == type) {
-                sound.volume = newVolume;
-                sound.source.volume = sound.volume;
+                PlayerPrefs.SetFloat(type+"Volume", newVolume);
+                sound.source.volume = newVolume;
             }
         }
     }

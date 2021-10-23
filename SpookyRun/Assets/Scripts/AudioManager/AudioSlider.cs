@@ -8,19 +8,13 @@ public class AudioSlider : MonoBehaviour
     public Slider slider;
     public Sound.audioType type;
 
-    // public void updateVolume(Sound.audioType type, float newVolume)
-    // {
-    //     FindObjectOfType<AudioManager>().changeVolume(type, newVolume);
-    // }
+    void Start()
+    {
+        slider.value = PlayerPrefs.GetFloat(type+"Volume");
+    }
 
     public void updateVolume(float newVolume)
     {
         FindObjectOfType<AudioManager>().changeVolume(type, slider.value);
     }
-
-    // void Update()
-    // {
-    //     updateVolume(Sound.audioType.Music, sliderMusicVolume.value);
-    //     updateVolume(Sound.audioType.Sound, sliderSoundVolume.value);
-    // }
 }
