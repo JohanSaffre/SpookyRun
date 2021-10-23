@@ -25,6 +25,10 @@ public class SceneAction : MonoBehaviour
 
     public void OnFadeComplete()
     {
+        if (PlayerPrefs.GetString("sceneToLoad") == "Game") {
+            FindObjectOfType<AudioManager>().StopAllMusic();
+            FindObjectOfType<AudioManager>().Play("ThemeGame");
+        }
         SceneManager.LoadScene(PlayerPrefs.GetString("sceneToLoad"));
     }
 

@@ -1824,7 +1824,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 18cb03d21106bd047a54cb9ea7883f37, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioManager: {fileID: 0}
   portraitAnimation: {fileID: 2035481776}
   boxCountLabel: {fileID: 1035968132}
   deathCountLabel: {fileID: 795279585}
@@ -1896,6 +1895,7 @@ GameObject:
   - component: {fileID: 1547545584}
   - component: {fileID: 1547545583}
   - component: {fileID: 1547545582}
+  - component: {fileID: 1547545585}
   m_Layer: 0
   m_Name: EventSystem
   m_TagString: Untagged
@@ -1951,6 +1951,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1547545585
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1547545581}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62fde803ab83d454cadbfb9bda4c681a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1607217586
 GameObject:
   m_ObjectHideFlags: 0
@@ -2939,7 +2951,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 18cb03d21106bd047a54cb9ea7883f37, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioManager: {fileID: 0}
   portraitAnimation: {fileID: 2035481776}
   boxCountLabel: {fileID: 1035968132}
   deathCountLabel: {fileID: 795279585}

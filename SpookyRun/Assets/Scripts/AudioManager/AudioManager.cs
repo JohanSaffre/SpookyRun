@@ -4,7 +4,7 @@ using System;
 
 public class AudioManager : MonoBehaviour
 {
-    private AudioManager instance;
+    private static AudioManager instance;
 
     public Sound[] sounds;
 
@@ -27,8 +27,8 @@ public class AudioManager : MonoBehaviour
             sound.source.pitch = sound.pitch;
 
             sound.source.loop = sound.loop;
+            sound.source.Stop();
         }
-        
     }
 
     void Start()
@@ -36,7 +36,6 @@ public class AudioManager : MonoBehaviour
         Play("Theme");
     }
 
-    // Update is called once per frame
     public void Play(string name)
     {
         Sound s = Array.Find(sounds, sound => sound.name == name);
@@ -46,5 +45,34 @@ public class AudioManager : MonoBehaviour
             return;
         }
         s.source.Play();
+    }
+
+    public void Stop(string name)
+    {
+        Sound s = Array.Find(sounds, sound => sound.name == name);
+
+        if (s == null) {
+            Debug.LogWarning("Sound: \"" + name +"\": not found.");
+            return;
+        }
+        s.source.Stop();
+    }
+
+    public void changeVolume(Sound.audioType type, float newVolume)
+    {
+        foreach (Sound sound in sounds) {
+            if (sound.type == type) {
+                sound.volume = newVolume;
+                sound.source.volume = sound.volume;
+            }
+        }
+    }
+
+    public void StopAllMusic()
+    {
+        foreach(Sound sound in sounds) {
+            if (sound.type == Sound.audioType.Music)
+                sound.source.Stop();
+        }
     }
 }

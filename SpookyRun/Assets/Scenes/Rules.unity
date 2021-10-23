@@ -219,8 +219,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa84733b629b8604a8ca7360229e5b16, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cinematic: {fileID: 0}
-  fader: {fileID: 0}
+  audioManager: {fileID: 7028807084208110490, guid: 047fc230aee754a4f8c9a1bd45962e43, type: 3}
+  fader: {fileID: 2522496200531722999, guid: c0e5b533072f16046aa0310284b6a1f5, type: 3}
 --- !u!1 &270311584
 GameObject:
   m_ObjectHideFlags: 0
@@ -438,6 +438,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2522496200531722953, guid: c0e5b533072f16046aa0310284b6a1f5, type: 3}
+      propertyPath: audioManager
+      value: 
+      objectReference: {fileID: 7028807084208110490, guid: 047fc230aee754a4f8c9a1bd45962e43, type: 3}
     - target: {fileID: 2522496200531722998, guid: c0e5b533072f16046aa0310284b6a1f5, type: 3}
       propertyPath: m_Name
       value: SceneFadeTransition

@@ -5,6 +5,8 @@ using UnityEngine.Audio;
 public class Sound
 {
     public string name;
+    public enum audioType {Music, Sound}
+    public audioType type;
 
     public AudioClip clip;
 
