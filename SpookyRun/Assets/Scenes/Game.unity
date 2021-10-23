@@ -506,7 +506,7 @@ Transform:
   m_Children:
   - {fileID: 678833608}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &341482560
 GameObject:
@@ -1638,7 +1638,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6748108236214304260, guid: 6dbbdcfcd47c15e4cb6a2909ad144117, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6748108236214304260, guid: 6dbbdcfcd47c15e4cb6a2909ad144117, type: 3}
       propertyPath: m_LocalScale.x
@@ -1824,6 +1824,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 18cb03d21106bd047a54cb9ea7883f37, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioManager: {fileID: 0}
   portraitAnimation: {fileID: 2035481776}
   boxCountLabel: {fileID: 1035968132}
   deathCountLabel: {fileID: 795279585}
@@ -1948,7 +1949,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1607217586
 GameObject:
@@ -2123,7 +2124,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2522496200531722952, guid: c0e5b533072f16046aa0310284b6a1f5, type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2522496200531722952, guid: c0e5b533072f16046aa0310284b6a1f5, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2938,6 +2939,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 18cb03d21106bd047a54cb9ea7883f37, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioManager: {fileID: 0}
   portraitAnimation: {fileID: 2035481776}
   boxCountLabel: {fileID: 1035968132}
   deathCountLabel: {fileID: 795279585}
