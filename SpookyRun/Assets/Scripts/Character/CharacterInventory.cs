@@ -7,7 +7,6 @@ using UnityEngine.SceneManagement;
 public class CharacterInventory : MonoBehaviour
 {
     private Rigidbody2D rigidBody2D;
-
     public Animator portraitAnimation;
 
     public Text boxCountLabel;
@@ -32,6 +31,8 @@ public class CharacterInventory : MonoBehaviour
     {
         boxCount += 1;
         boxCountLabel.text = ": " + boxCount;
+        // PLAY SOUNDS
+        FindObjectOfType<AudioManager>().Play("CollectBox");
     }
 
     void UpdateDeathCount()
