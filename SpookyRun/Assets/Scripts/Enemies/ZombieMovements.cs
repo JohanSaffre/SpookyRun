@@ -40,4 +40,15 @@ public class ZombieMovements : MonoBehaviour
             _spriteRenderer.flipX = true;
         }
     }
+
+    private void OnCollisionEnter2D(Collision2D other) {
+        if (direction == "right") {
+            direction = "left";
+            _spriteRenderer.flipX = true;
+        }
+        if (direction == "left") {
+            direction = "right";
+            _spriteRenderer.flipX = false;
+        }
+    }
 }

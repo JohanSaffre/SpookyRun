@@ -1,11 +1,6 @@
 fileFormatVersion: 2
-<<<<<<< HEAD:SpookyRun/Assets/Prefabs/Objects/Box.prefab.meta
-guid: 32d646802decace47ae1ae8621cdcca2
-PrefabImporter:
-=======
 guid: 14cfcf0793e0ef648854c12f02162885
 DefaultImporter:
->>>>>>> impl-enemies:SpookyRun/Assets/Scenes/LevelDesign_LV1.unity.meta
   externalObjects: {}
   userData: 
   assetBundleName: 
