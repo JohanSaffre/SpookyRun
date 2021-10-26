@@ -13,9 +13,10 @@ GameObject:
   - component: {fileID: 8626216015198912285}
   - component: {fileID: 8626216015198912282}
   - component: {fileID: 6396756064557950279}
+  - component: {fileID: 1513587981878969060}
   m_Layer: 0
   m_Name: ZombieBoy
-  m_TagString: Untagged
+  m_TagString: Zombies
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -151,3 +152,16 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1513587981878969060
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8626216015198912281}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 738bbe4f7c035474b874ec7a75a61170, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 1
