@@ -42,13 +42,8 @@ public class ZombieMovements : MonoBehaviour
     }
 
     private void OnCollisionEnter2D(Collision2D other) {
-        if (direction == "right") {
-            direction = "left";
-            _spriteRenderer.flipX = true;
-        }
-        if (direction == "left") {
-            direction = "right";
-            _spriteRenderer.flipX = false;
+        if (other.gameObject.tag == "Zombies") {
+            Physics2D.IgnoreCollision(other.collider, _box);
         }
     }
 }
