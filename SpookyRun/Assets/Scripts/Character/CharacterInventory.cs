@@ -8,6 +8,7 @@ public class CharacterInventory : MonoBehaviour
 {
     private Rigidbody2D rigidBody2D;
     public Animator portraitAnimation;
+    public Animator animator;
 
     public Text boxCountLabel;
     public Text deathCountLabel;
@@ -56,11 +57,17 @@ public class CharacterInventory : MonoBehaviour
         }
     }
 
+    public void ReInitPos()
+    {
+        rigidBody2D.position = new Vector2(-4, 7);
+        animator.SetBool("isDying", false);
+    }
+
     void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.tag == "DeathDrop") {
             UpdateDeathCount();
-            rigidBody2D.position = new Vector2(-4, 7);
+            animator.SetBool("isDying", true);
         }
     }
 }
