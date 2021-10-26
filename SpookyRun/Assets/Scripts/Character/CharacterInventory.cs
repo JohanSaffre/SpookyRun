@@ -48,11 +48,17 @@ public class CharacterInventory : MonoBehaviour
         portraitAnimation.SetBool("isDamaged", false);
     }
 
-    void OnCollisionEnter2D(Collision2D collision)
+    void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.tag == "Box") {
             UpdateBoxCount();
-        } else if (collision.gameObject.tag == "DeathDrop") {
+            Destroy(collision.gameObject);
+        }
+    }
+
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "DeathDrop") {
             UpdateDeathCount();
             rigidBody2D.position = new Vector2(-4, 7);
         }
