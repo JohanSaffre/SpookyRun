@@ -13,6 +13,7 @@ using System.Collections;
 
 public class CharacterMove : MonoBehaviour
 {
+	public SceneAction sceneAction;
 	private Rigidbody2D rigidBody2D;
 	public Animator animator;
 
@@ -23,6 +24,8 @@ public class CharacterMove : MonoBehaviour
 	// POSITION PARAMS
 	public static Vector2 pos = new Vector2(-4, 7);
 	private static float direction = 1; // 1 for RIGHT -1 for LEFT
+
+	private static int level = 1;
 
 	void Awake()
 	{
@@ -72,6 +75,14 @@ public class CharacterMove : MonoBehaviour
 		animator.SetBool("isJumping", true);
 	}
 
+    void OnTriggerEnter2D(Collider2D collision)
+    {
+		if (collision.gameObject.tag == "Finish") {
+			sceneAction.FadeOut("CutScene"+level);
+			level += 1;
+		}
+    }
+
     void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.tag == "Ground")
@@ -97,7 +108,7 @@ public class CharacterMove : MonoBehaviour
 		}
 	}
 
-	private void OnDestroy()
+	void OnDestroy()
 	{
 		// Save Character's Pos
 		pos = gameObject.transform.position;

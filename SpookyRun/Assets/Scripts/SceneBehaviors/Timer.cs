@@ -5,6 +5,8 @@ using UnityEngine.UI;
 
 public class Timer : MonoBehaviour
 {
+    public SceneAction sceneAction;
+
     public static float timeValue = 300;
     public Text timerLabel;
 
@@ -27,6 +29,8 @@ public class Timer : MonoBehaviour
         if (timeValue >= 0) {
             timeValue -= Time.deltaTime;
             DisplayTimer();
+        } else {
+            sceneAction.FadeOut("GameOver");
         }
     }
 }

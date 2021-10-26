@@ -665,7 +665,7 @@ Transform:
   - {fileID: 1199380710}
   - {fileID: 495990513}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &83331811 stripped
 Transform:
@@ -991,7 +991,7 @@ GameObject:
   - component: {fileID: 168937840}
   m_Layer: 0
   m_Name: Arrival
-  m_TagString: Untagged
+  m_TagString: Finish
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1034,7 +1034,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &172032804 stripped
 GameObject:
@@ -3703,6 +3703,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dcad1736524a91d4199ff95a7c69cd97, type: 3}
+--- !u!114 &1128269247 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2522496200531722953, guid: c0e5b533072f16046aa0310284b6a1f5, type: 3}
+  m_PrefabInstance: {fileID: 1678582631}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa84733b629b8604a8ca7360229e5b16, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1187865993
 GameObject:
   m_ObjectHideFlags: 0
@@ -5403,7 +5414,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be1570f5ac710f34b96e16bfaf88ea1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timerLabel: {fileID: 0}
+  sceneAction: {fileID: 1128269247}
+  timerLabel: {fileID: 1945943565}
 --- !u!1001 &1989365453
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -41557,6 +41569,10 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3320292405394092053, guid: 1704b2db068027f4bad6e3930cab2faa, type: 3}
+      propertyPath: sceneAction
+      value: 
+      objectReference: {fileID: 1128269247}
     - target: {fileID: 4932617943462275093, guid: 1704b2db068027f4bad6e3930cab2faa, type: 3}
       propertyPath: animator
       value: 
