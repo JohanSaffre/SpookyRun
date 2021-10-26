@@ -30,10 +30,11 @@ public class CharacterInventory : MonoBehaviour
 
     void UpdateBoxCount()
     {
-        boxCount += 1;
-        boxCountLabel.text = ": " + boxCount;
         // PLAY SOUNDS
         FindObjectOfType<AudioManager>().Play("CollectBox");
+        // UPDATE LABEL
+        boxCount += 1;
+        boxCountLabel.text = ": " + boxCount;
     }
 
     void UpdateDeathCount()
@@ -65,7 +66,7 @@ public class CharacterInventory : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.tag == "DeathDrop") {
+        if (collision.gameObject.tag == "DeathDrop" || collision.gameObject.tag == "Zombies") {
             UpdateDeathCount();
             animator.SetBool("isDying", true);
         }

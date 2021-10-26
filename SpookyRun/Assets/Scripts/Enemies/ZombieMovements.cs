@@ -22,6 +22,12 @@ public class ZombieMovements : MonoBehaviour
 
     void Update()
     {
+        if (speed > 0)
+            Walk();
+    }
+
+    public void Walk()
+    {
         if (direction == "right") {
             _transform.position += new Vector3(1 * Time.deltaTime * speed, 0, 0);
         }
@@ -41,12 +47,22 @@ public class ZombieMovements : MonoBehaviour
         }
     }
 
+    public void ResetAttack()
+    {
+        _animator.SetBool("Attacking", false);
+        speed = 1;
+    }
+
     private void OnCollisionEnter2D(Collision2D other) {
+        if (other.gameObject.tag == "Player") {
+            _animator.SetBool("Attacking", true);
+            speed = 0;
+            return;
+        }
         if (direction == "right") {
             direction = "left";
             _spriteRenderer.flipX = true;
-        }
-        if (direction == "left") {
+        } else if (direction == "left") {
             direction = "right";
             _spriteRenderer.flipX = false;
         }
