@@ -307,7 +307,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.2, y: 0}
+  m_Offset: {x: -0.5605739, y: -0.396631}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -318,7 +318,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 4.5, y: 7}
+  m_Size: {x: 3.778852, y: 6.206738}
   m_EdgeRadius: 0
 --- !u!114 &4932617943462275093
 MonoBehaviour:
@@ -333,6 +333,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   portraitAnimation: {fileID: 0}
+  animator: {fileID: 0}
   boxCountLabel: {fileID: 0}
   deathCountLabel: {fileID: 0}
 --- !u!114 &3320292405394092053
@@ -347,6 +348,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7eac543da4691ff428a21b531d35d9e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sceneAction: {fileID: 0}
   animator: {fileID: 4932617943462275088}
   speed: 15
   jumpForce: 45
