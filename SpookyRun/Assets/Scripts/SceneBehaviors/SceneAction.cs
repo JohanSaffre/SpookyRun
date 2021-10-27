@@ -36,6 +36,10 @@ public class SceneAction : MonoBehaviour
         SceneManager.LoadScene(sceneName);
     }
 
+    public void LoadSceneFromSetting() {
+        SceneManager.LoadScene(PlayerPrefs.GetString("SettingBackButton"));
+    }
+
     public void QuitGame() {
         Application.Quit();
     }

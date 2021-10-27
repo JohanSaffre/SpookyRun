@@ -1728,6 +1728,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1704b2db068027f4bad6e3930cab2faa, type: 3}
+--- !u!114 &184194520 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3320292405394092053, guid: 1704b2db068027f4bad6e3930cab2faa, type: 3}
+  m_PrefabInstance: {fileID: 184194519}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 494129589}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7eac543da4691ff428a21b531d35d9e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &185169511
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -55740,6 +55751,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62fde803ab83d454cadbfb9bda4c681a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  character: {fileID: 0}
 --- !u!114 &1054440538
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -62779,6 +62791,7 @@ GameObject:
   - component: {fileID: 1753330307}
   - component: {fileID: 1753330309}
   - component: {fileID: 1753330308}
+  - component: {fileID: 1753330310}
   m_Layer: 5
   m_Name: PauseText
   m_TagString: Untagged
@@ -62847,6 +62860,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1753330306}
   m_CullTransparentMesh: 1
+--- !u!114 &1753330310
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1753330306}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62fde803ab83d454cadbfb9bda4c681a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  character: {fileID: 184194520}
 --- !u!4 &1757009948 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8626216015198912283, guid: 2a3b8b6cceaa1c04fbb6424cb1aadb48, type: 3}

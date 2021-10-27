@@ -28,6 +28,8 @@ public class CharacterMove : MonoBehaviour
 	private static int level = 1;
 	private bool finishLevel = false;
 
+	public int getLevel() {return (level);}
+
 	void Awake()
 	{
 		finishLevel = false;
@@ -87,8 +89,8 @@ public class CharacterMove : MonoBehaviour
 				nextScene = "GameOverWin";
 			else
 				nextScene = "CutScene"+level;
-			sceneAction.FadeOut(nextScene);
 			level += 1;
+			sceneAction.FadeOut(nextScene);
 		}
     }
 

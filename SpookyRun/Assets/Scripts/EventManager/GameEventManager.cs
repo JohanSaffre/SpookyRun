@@ -5,9 +5,12 @@ using UnityEngine.SceneManagement;
 
 public class GameEventManager : MonoBehaviour
 {
+    public CharacterMove character;
+
     private void checkForPause()
     {
         if (Input.GetKeyUp(KeyCode.P)) {
+            PlayerPrefs.SetString("SettingBackButton", "Level"+character.getLevel());
             SceneManager.LoadScene("Settings");
         }
     }
