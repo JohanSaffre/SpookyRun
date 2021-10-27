@@ -69,4 +69,5 @@ public class ZombieMovements : MonoBehaviour
         if (other.gameObject.tag == "Zombies") {
             Physics2D.IgnoreCollision(other.collider, _box);
         }
+    }
 }
