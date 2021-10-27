@@ -26,9 +26,11 @@ public class CharacterMove : MonoBehaviour
 	private static float direction = 1; // 1 for RIGHT -1 for LEFT
 
 	private static int level = 1;
+	private bool finishLevel = false;
 
 	void Awake()
 	{
+		finishLevel = false;
 		rigidBody2D = GetComponent<Rigidbody2D>();
 		gameObject.transform.position = new Vector3(pos.x, pos.y, 0);
 	}
@@ -75,10 +77,17 @@ public class CharacterMove : MonoBehaviour
 		animator.SetBool("isJumping", true);
 	}
 
-    void OnTriggerEnter2D(Collider2D collision)
-    {
+	void OnTriggerEnter2D(Collider2D collision)
+	{
 		if (collision.gameObject.tag == "Finish") {
-			sceneAction.FadeOut("CutScene"+level);
+			finishLevel = true;
+			// Change Scene
+			string nextScene;
+			if (level == 3)
+				nextScene = "GameOverWin";
+			else
+				nextScene = "CutScene"+level;
+			sceneAction.FadeOut(nextScene);
 			level += 1;
 		}
     }
@@ -112,5 +121,7 @@ public class CharacterMove : MonoBehaviour
 	{
 		// Save Character's Pos
 		pos = gameObject.transform.position;
+		if (finishLevel)
+			pos =  new Vector2(-4, 7); // RE-INIT CHARACTER POS
 	}
 }
